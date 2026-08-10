@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Humility Enterprises — Less, at a premium.</title>
+<meta name="description" content="A retailer of status objects whose function is to indicate that you are above status objects.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23faf9f7'/></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ticker" id="ticker">
+  <span class="ticker-label">Humility Enterprises · Corporate Humility Score</span>
+  <span class="ticker-score" id="corpScore">— </span>
+  <span class="ticker-note" id="corpNote">recalculating</span>
+</div>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="wordmark" href="#top">Humility<span>Enterprises</span></a>
+    <nav class="nav">
+      <a href="#catalog">Catalog</a>
+      <a href="#tiers">Tiers</a>
+      <a href="#founder">Founder</a>
+      <a href="#faq">FAQ</a>
+      <button class="cart-btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Established recently</p>
+      <h1 class="slogan" id="slogan">If it worked, you&rsquo;d never know you owned it.</h1>
+      <p class="lede">A retailer of status objects whose function is to indicate that you are above status objects. We were not the first to do this. We are the first to say so on the homepage.</p>
+
+      <div class="honest" id="honest">
+        <p>One thing on this page is not a joke.</p>
+        <a class="give" href="#give">The give button</a>
+        <p class="honest-sub">It works. Nothing comes back.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="wrap strip-inner">
+      <span>Free shipping on nothing</span>
+      <span>30-day returns on items not received</span>
+      <span>Carbon neutral by virtue of inactivity</span>
+    </div>
+  </section>
+
+  <section id="catalog" class="section">
+    <div class="wrap">
+      <p class="eyebrow">The Catalog</p>
+      <h2>Objects that say you don&rsquo;t need objects</h2>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="tiers" class="section alt">
+    <div class="wrap">
+      <p class="eyebrow">Membership</p>
+      <h2>The more you pay, the less you get</h2>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr><th></th><th>Starter</th><th>Considered</th><th>Enterprise</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Included</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>Delivered</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>Acknowledged</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>Announced</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr class="price-row"><td>Price</td><td>$40</td><td>$600</td><td>$10,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Enterprise offers the most complete version of this.</p>
+    </div>
+  </section>
+
+  <section id="enterprise" class="section enterprise">
+    <div class="wrap enterprise-inner">
+      <div class="enterprise-void" aria-hidden="true"></div>
+      <div class="enterprise-copy">
+        <p class="eyebrow">Flagship</p>
+        <h2>Enterprise Humility</h2>
+        <p class="price">$10,000</p>
+        <p class="soldout">Sold out.</p>
+        <p class="thesis">You receive nothing, and nobody is told.</p>
+
+        <dl class="spec">
+          <dt>What&rsquo;s included</dt>
+          <dd>Nothing is included. This is not a minimalist gesture toward a small, beautiful object. There is no object. There is no card, no certificate, no serial number, no unmarked box, no ledger entry you can point to later.</dd>
+          <dt>Shipping</dt>
+          <dd>There is nothing to ship.</dd>
+          <dt>Delivery timeline</dt>
+          <dd>Immediate. It has already not arrived.</dd>
+          <dt>Can I gift it?</dt>
+          <dd>You may pay for someone else&rsquo;s Enterprise Humility. They will not be informed. Neither will you be informed that they weren&rsquo;t informed. From your side, and from theirs, this is indistinguishable from having done nothing at all. Many customers find this is the point. Many customers find this too late.</dd>
+          <dt>Returns</dt>
+          <dd>Full refund, thirty days, no questions. Requesting one is the only way to receive a written communication from us with your name on it.</dd>
+        </dl>
+
+        <div class="waitlist" id="waitlist">
+          <form id="waitForm" class="inline-form">
+            <label class="sr-only" for="waitEmail">Email</label>
+            <input id="waitEmail" type="email" placeholder="your@email.com" required>
+            <button type="submit">Join the waitlist</button>
+          </form>
+          <p class="fineprint">Enterprise Humility is sold out and will remain sold out. This is not scarcity marketing. There is no quantity. Sold out is its condition, not its status.</p>
+        </div>
+
+        <div class="waitresult" id="waitResult" hidden>
+          <h3>You are #1.</h3>
+          <p class="problem">That&rsquo;s a problem.</p>
+          <p>There is nobody ahead of you. Nobody joined before you did. The list resets each time it is viewed, so there is also nobody behind you.</p>
+          <p>You are first in line for the thing whose entire proposition is that no one knows you have it. You have taken a position. In a queue. For anonymity.</p>
+          <p>We&rsquo;d move you back, but that would require telling someone.</p>
+          <ul class="queue-stats">
+            <li><span>Your place</span><strong>#1</strong></li>
+            <li><span>Estimated wait</span><strong>&mdash;</strong></li>
+            <li><span>People ahead of you</span><strong>0</strong></li>
+            <li><span>People behind you</span><strong>0</strong></li>
+          </ul>
+          <p><button class="linkbtn" id="leaveWait">Leave the waitlist</button> &middot; <button class="linkbtn" id="stayWait">Stay #1</button></p>
+          <p class="fineprint" id="leaveNote" hidden>Leaving the waitlist returns you to #1.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section alt">
+    <div class="wrap">
+      <p class="eyebrow">What people say</p>
+      <h2>Verified, briefly</h2>
+      <div class="quotes" id="quotes"></div>
+    </div>
+  </section>
+
+  <section id="founder" class="section founder">
+    <div class="wrap founder-inner">
+      <figure class="frame-wrap">
+        <div class="spotlight" aria-hidden="true"></div>
+        <div class="frame" role="img" aria-label="An empty gilt frame, lit by a museum spotlight."></div>
+        <div class="rope" aria-hidden="true"><span></span><span></span></div>
+        <figcaption class="plaque">
+          <span class="plaque-title">The Founder</span>
+          <span class="plaque-sub">Oil on nothing &middot; Gilt frame, hand-carved, Florence</span>
+          <span class="plaque-sub">Conservation lighting &middot; Do not photograph</span>
+        </figcaption>
+      </figure>
+      <div class="founder-copy">
+        <p class="eyebrow">Leadership</p>
+        <h2>We&rsquo;d tell you about our founder, but that would rather defeat the purpose.</h2>
+        <p>There is a person. They have declined to be a story. This has been a source of some friction internally, as it turns out &ldquo;founder declines to be a story&rdquo; is itself an extremely good story, and we have now told it to you twice.</p>
+        <p class="fineprint">The frame cost $14,000. The lighting rig cost more. Insurance on the empty frame is our second-largest line item.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="wrap narrow">
+      <p class="eyebrow">Reviews</p>
+      <h2>Leave a review</h2>
+      <form id="reviewForm" class="review-form">
+        <div class="stars" id="stars" role="radiogroup" aria-label="Rating">
+          <button type="button" data-v="1" aria-label="1 star">&#9733;</button>
+          <button type="button" data-v="2" aria-label="2 stars">&#9733;</button>
+          <button type="button" data-v="3" aria-label="3 stars">&#9733;</button>
+          <button type="button" data-v="4" aria-label="4 stars">&#9733;</button>
+          <button type="button" data-v="5" aria-label="5 stars">&#9733;</button>
+        </div>
+        <label class="sr-only" for="reviewText">Your review</label>
+        <textarea id="reviewText" maxlength="2000" placeholder="Tell others what you think"></textarea>
+        <div class="review-foot">
+          <span id="counter">2,000 characters remaining</span>
+          <button type="submit">Submit review</button>
+        </div>
+      </form>
+      <div class="review-thanks" id="reviewThanks" hidden>
+        <p><strong>Thank you.</strong> Your review has been recorded and will never be displayed.</p>
+        <p>Nobody will read this. Not us either. It went straight to a place we don&rsquo;t look.</p>
+        <button class="linkbtn" id="reviewAgain">Write another one</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="wrap narrow">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently asked</h2>
+      <dl class="faq" id="faq-list"></dl>
+    </div>
+  </section>
+
+  <section id="give" class="give-section">
+    <div class="wrap narrow">
+      <p class="give-intro">Everything above this line is a joke.</p>
+      <p>This isn&rsquo;t. The button below goes to a real organization&rsquo;s own donation page, with anonymous giving available. Your money goes to them directly &mdash; it never passes through us, and we take nothing.</p>
+      <p>You can ask them for a receipt; that&rsquo;s between you and them. We won&rsquo;t know you clicked, we won&rsquo;t email you, and there is nothing here to screenshot.</p>
+      <div class="give-actions" id="giveActions">
+        <a href="#" data-pending>Organization to be chosen &mdash; not yet wired</a>
+      </div>
+      <p class="give-foot">Any amount. We take nothing. There is no next step after this one.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="foot-col">
+      <p class="wordmark small">Humility<span>Enterprises</span></p>
+      <p class="fineprint">A retailer of nothing, at scale.</p>
+    </div>
+    <div class="foot-col">
+      <form id="newsForm" class="inline-form">
+        <label class="sr-only" for="newsEmail">Email</label>
+        <input id="newsEmail" type="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="fineprint" id="newsResult" hidden>
+        You are subscribed. You have also been unsubscribed. We do this immediately so you never have to think about it again. You will hear nothing. Thank you for your interest.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<div class="viewers" id="viewers" aria-live="off">
+  <span class="dot"></span><span id="viewerCount">1,204</span> people are viewing this page
+</div>
+
+<div class="idle" id="idle" hidden>
+  <p>You&rsquo;ve been still for a minute and a half.</p>
+  <p>That&rsquo;s the most humble thing anyone has done on this site today.</p>
+  <p class="fineprint">We are not going to give you anything for it.</p>
+</div>
+
+<div class="exit" id="exit" hidden>
+  <div class="exit-card">
+    <p class="exit-wait">Wait &mdash;</p>
+    <p class="exit-no">No. Go ahead.</p>
+    <button id="exitLeave">Leave</button>
+  </div>
+</div>
+
+<div class="cart-drawer" id="cartDrawer" hidden>
+  <button class="cart-close" id="cartClose" aria-label="Close">&times;</button>
+  <p class="eyebrow">Cart</p>
+  <p class="cart-line"><span id="cartItems">0 items</span> &mdash; <strong id="cartTotal">$0.00</strong></p>
+  <p id="cartAdded">You have added: Nothing.</p>
+  <p class="fineprint" id="cartTimes"></p>
+  <button class="linkbtn" id="addNothing">Add more nothing</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
