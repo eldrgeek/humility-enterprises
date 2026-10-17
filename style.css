@@ -1,6 +1,10 @@
 /* Humility Enterprises — the design is the delivery system for the joke.
    It must look genuinely expensive and never wink. */
 
+/* The hidden attribute must win over any display rule below (.exit sets display:grid,
+   which kept the exit dialog on screen from page load and made Leave do nothing). */
+[hidden]{display:none !important}
+
 :root{
   --paper:#faf9f7;
   --paper-2:#f2efe9;
