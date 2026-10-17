@@ -3,37 +3,37 @@
 
 /* ---------------------------------------------------------------- catalog */
 const PRODUCTS = [
-  { mark:"Fig. 1", name:"The Inward Watch", price:"$2,850",
+  { mark:"Fig. 1", img:"img/fig-1.jpg", alt:"A steel automatic watch lying face-down on a travertine block, only its plain caseback showing.", name:"The Inward Watch", price:"$2,850",
     copy:"Swiss automatic, sapphire crystal, dial mounted facing the wrist. Only the wearer can read it; when asked the time, the wearer is expected to say they don’t know. Complimentary engraving is applied to the caseback, against the skin, where it cannot be photographed." },
-  { mark:"Fig. 2", name:"The Understudy", price:"$4,000 / month",
+  { mark:"Fig. 2", img:"img/fig-2.jpg", alt:"An empty charcoal suit on a walnut valet stand, polished oxfords beneath it.", name:"The Understudy", price:"$4,000 / month",
     copy:"We identify the person best qualified to hold your position, place them on retainer, and instruct them not to begin. They are paid monthly regardless. Cancel anytime; they will never be told they were standing by, and neither will you be told what they were doing instead." },
-  { mark:"Fig. 3", name:"The Nonspeaking Engagement", price:"$18,000",
+  { mark:"Fig. 3", img:"img/fig-3.jpg", alt:"A black folding chair alone on an empty stage, a blank badge on a lanyard draped over it.", name:"The Nonspeaking Engagement", price:"$18,000",
     copy:"We fly you to a leading conference in your discipline, business class, and arrange for you not to appear on the program. Includes hotel, green room access, and a badge reading ATTENDEE. A moderator has been briefed not to recognize you from the stage." },
-  { mark:"Fig. 4", name:"The Apology Retainer", price:"$2,000 / month",
+  { mark:"Fig. 4", img:"img/fig-4.jpg", alt:"A cream envelope with an oxblood wax seal and a capped fountain pen on a green leather blotter.", name:"The Apology Retainer", price:"$2,000 / month",
     copy:"Outside counsel on standing retainer, engaged for the sole purpose of advising you to admit fault. Available nights and weekends. The retainer is nonrefundable, a policy counsel will advise you to accept responsibility for." },
-  { mark:"Fig. 5", name:"The Napkin", price:"$1,200",
+  { mark:"Fig. 5", img:"img/fig-5.jpg", alt:"A cocktail napkin with a faint sketch of boxes and arrows, framed in white oak under a small brass light.", name:"The Napkin", price:"$1,200",
     copy:"A cocktail napkin, framed in white oak, bearing the original sketch of your company’s founding idea — rendered in the handwriting of the person who actually had it. We source the handwriting from correspondence you retained. Frame includes a small light." },
-  { mark:"Fig. 6", name:"Monogram Removal", price:"$600 / garment",
+  { mark:"Fig. 6", img:"img/fig-6.jpg", alt:"A corked glass vial of navy thread with a blank tag, beside a folded white shirt cuff.", name:"Monogram Removal", price:"$600 / garment",
     copy:"Our atelier removes initials from shirting, luggage, linens, and signet rings by hand. The recovered thread is returned to you in a labeled glass vial. The label is blank." },
-  { mark:"Fig. 7", name:"The Legacy Bench", price:"$12,000",
+  { mark:"Fig. 7", img:"img/fig-7.jpg", alt:"A teak and cast-iron park bench with a small brass plaque on its top rail.", name:"The Legacy Bench", price:"$12,000",
     copy:"Teak and cast iron, installed in a municipal park, with a brass plaque bearing the name of a stranger selected at random from public records. The park is chosen for its distance from your home. Maintenance is billed to you annually in perpetuity." },
-  { mark:"Fig. 8", name:"The Unlabeled Hoodie", price:"$400",
+  { mark:"Fig. 8", img:"img/fig-8.jpg", alt:"A plain heather-grey hoodie folded square on a pale oak block.", name:"The Unlabeled Hoodie", price:"$400",
     copy:"Heavyweight loopback cotton, milled in Wakayama. The logo is applied to the interior facing, at the nape. Only you know it is there. That is the product. That is also, in our experience, the problem." },
-  { mark:"Fig. 9", name:"The Anonymous Donor Plaque", price:"$3,400",
+  { mark:"Fig. 9", img:"img/fig-9.jpg", alt:"A blank polished brass plaque leaning on a linen cloth, four brass screws laid in a row.", name:"The Anonymous Donor Plaque", price:"$3,400",
     copy:"Solid brass, eighteen inches, sand-cast and hand-polished. Reads ANONYMOUS. Mounting hardware included. Our shop will not engrave a second line, and has declined every request to date." },
-  { mark:"Fig. 10", name:"The Recusal Gavel", price:"$390",
+  { mark:"Fig. 10", img:"img/fig-10.jpg", alt:"A dark lignum vitae gavel with a brass band resting on a leather strike block.", name:"The Recusal Gavel", price:"$390",
     copy:"Lignum vitae, brass band, leather strike block. One strike ends your participation in the meeting. There is no second strike, and the gavel is not returned to the room after use." },
-  { mark:"Fig. 11", name:"The Board", price:"$180",
+  { mark:"Fig. 11", img:"img/fig-11.jpg", alt:"An end-grain walnut cutting board standing on its edge.", name:"The Board", price:"$180",
     copy:"End-grain walnut cutting board, laser-engraved with your family surname, misspelled. Spelling is determined by our shop and is not disclosed in advance. We do not correct, replace, or discuss it." },
-  { mark:"Fig. 12", name:"“Ask Them”", price:"$95 / 500",
+  { mark:"Fig. 12", img:"img/fig-12.jpg", alt:"A box of deckled ivory letterpress cards, the top card face-down and blank.", name:"“Ask Them”", price:"$95 / 500",
     copy:"Letterpress business cards, 600gsm cotton, deckled edge. The face reads ASK THEM. The reverse is blank. Your name does not appear on the card, the box, or the order." },
-  { mark:"Fig. 13", name:"The Bio", price:"$1,500",
+  { mark:"Fig. 13", img:"img/fig-13.jpg", alt:"A nearly empty sheet of cream paper on a walnut desk, a red pencil and trimmed paper strips beside it.", name:"The Bio", price:"$1,500",
     copy:"Our editors shorten your professional biography until it is accurate. Delivered as a single line. The engagement includes one round of revisions, which are used to make it shorter." },
-  { mark:"Fig. 14", name:"The Ego Tare Scale", price:"$740",
+  { mark:"Fig. 14", img:"img/fig-14.jpg", alt:"A brushed-steel bathroom scale with a dark, blank glass readout on a limestone floor.", name:"The Ego Tare Scale", price:"$740",
     copy:"Brushed steel platform, glass readout, calibrated annually. Weighs you, then subtracts what you believed you weighed. The display shows the remainder. In eleven months of testing the remainder has never been zero." },
-  { mark:"Fig. 15", name:"The Humility Retreat", price:"$6,500 / seven days",
+  { mark:"Fig. 15", img:"img/fig-15.jpg", alt:"A stack of white enamel plates, a linen apron and a wooden spoon on a scrubbed table in an adobe kitchen.", name:"The Humility Retreat", price:"$6,500 / seven days",
     copy:"An intensive at our facility in the high desert. Participants prepare and serve all meals. Facilitators eat, rest, and lead the evening reflection on service. Sessions are not recorded, and there is no certificate; participants who request one are placed on next year’s kitchen rotation." },
-  { mark:"Fig. 16", name:"The Mirror", price:"$2,100",
+  { mark:"Fig. 16", img:"img/fig-16.jpg", alt:"A tall beveled mirror in a pale ash frame leaning against a wall, reflecting an empty room.", name:"The Mirror", price:"$2,100",
     copy:"Hand-silvered, beveled, 24 × 36 inches, in a plain ash surround. It shows someone else. We have been asked repeatedly who, and the honest answer is that it differs by owner and we have stopped collecting the reports." }
 ];
 
@@ -93,7 +93,7 @@ const FAQ = [
     const card = document.createElement("article");
     card.className = "card";
     card.innerHTML = `
-      <div class="card-void" data-mark="${p.mark}"></div>
+      <div class="card-void" data-mark="${p.mark}"><img src="${p.img}" alt="${p.alt}" width="880" height="1100" loading="lazy" decoding="async"></div>
       <h3>${p.name}</h3>
       <p class="card-price">${p.price}</p>
       <p class="card-copy">${p.copy}</p>
